@@ -1,6 +1,7 @@
 package home.com.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -8,10 +9,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/mom")
 public class MomController {
 	
-	@ResponseBody
 	@RequestMapping("/sugar")
-	public String getSugar() {
-		return " here is your sugar";
+	public String getSugar(Model model) {
+		return "Here is your sugar";
 	}
 
 }

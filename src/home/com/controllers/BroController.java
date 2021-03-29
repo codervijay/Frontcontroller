@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/bro")
 public class BroController {
 
-	@ResponseBody
-	@RequestMapping("/ball")
+	@RequestMapping("/bat")
 	public String getBall() {
-		return " Give the ball bro ";
+		return "MRFBat";
 	}
 }
